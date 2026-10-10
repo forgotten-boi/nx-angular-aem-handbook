@@ -1,0 +1,27 @@
+{
+  "name": "nx-angular-aem-handbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Monorepo and the Machine: a handbook on Nx, Angular and Adobe Experience Manager, shipped as an installable PWA and a Capacitor app.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "serve": "node tools/serve.mjs",
+    "icons": "node tools/make-icons.mjs",
+    "verify:graph": "node tools/verify-affected-closure.mjs",
+    "verify": "node tools/verify.mjs",
+    "cap:sync": "node tools/bump-cache.mjs && npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3"
+  }
+}

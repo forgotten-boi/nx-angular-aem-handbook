@@ -1,0 +1,66 @@
+# ---------------------------------------------------------------------
+# Dependencies and OS noise
+# ---------------------------------------------------------------------
+node_modules/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------
+# Anything that could carry a secret
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------------------------------------------------------------
+# Signing material. Never commit any of this.
+# ---------------------------------------------------------------------
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.certSigningRequest
+*.cer
+google-services.json
+GoogleService-Info.plist
+android/key.properties
+android/keystore.properties
+
+# ---------------------------------------------------------------------
+# Capacitor build output.
+#
+# android/ and ios/ themselves stay TRACKED. Capacitor treats the native
+# projects as editable source: manifest edits, icons, splash screens and
+# plugin registrations all live there, and `npx cap add` does not
+# reproduce them. Only the generated build output is ignored.
+# ---------------------------------------------------------------------
+android/app/build/
+android/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+android/captures/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+
+ios/App/Pods/
+ios/App/build/
+ios/App/Podfile.lock
+ios/App/App/public/
+ios/App/App/capacitor.config.json
+ios/App/App/config.xml
+ios/DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# ---------------------------------------------------------------------
+# Tooling
+# ---------------------------------------------------------------------
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+tools/.expected-closure.json

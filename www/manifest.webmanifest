@@ -1,0 +1,53 @@
+{
+  "id": "/nx-angular-aem-handbook/",
+  "name": "The Monorepo and the Machine",
+  "short_name": "Monorepo",
+  "description": "A working handbook on Nx monorepos, Angular, and shipping front-end code into Adobe Experience Manager, with a bonus part on AWS.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": ["books", "education", "developer"],
+  "theme_color": "#E9EAE3",
+  "background_color": "#E9EAE3",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chapter 1: Why a monorepo",
+      "short_name": "Start",
+      "url": "index.html#ch1"
+    },
+    {
+      "name": "Chapter 9: Four ways into AEM",
+      "short_name": "Patterns",
+      "url": "index.html#ch9"
+    },
+    {
+      "name": "Appendix A: Command cheat sheet",
+      "short_name": "Commands",
+      "url": "index.html#apxA"
+    }
+  ]
+}

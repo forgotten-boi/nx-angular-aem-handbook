@@ -1,0 +1,18 @@
+{
+  "appId": "io.github.forgottenboi.monorepomachine",
+  "appName": "The Monorepo and the Machine",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#E9EAE3",
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "ios": {
+    "backgroundColor": "#E9EAE3",
+    "contentInset": "always",
+    "limitsNavigationsToAppBoundDomains": true
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
