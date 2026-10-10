@@ -99,7 +99,7 @@ the book but registers no worker.
 
 ```
 www/                      the only thing deployed
-  index.html              the whole book, 334 kB, no dependencies
+  index.html              the whole book, 326 kB (89 kB gzipped), no deps
   sw.js                   precache, cache-first, background refresh
   manifest.webmanifest    standalone, both theme colours
   icons/                  192, 512, and a separate maskable 512
